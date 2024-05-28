@@ -98,13 +98,11 @@ def resnet50_ccnet():
     return ResNet(Bottleneck, [3, 4, 6, 3])
 
 # 定义训练和测试函数
+# 定义设备，可以使用cpu训练
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-# 打印设备信息
-print(device)
-
 model = resnet50_ccnet().to(device)
 criterion = nn.CrossEntropyLoss()
-optimizer = torch.optim.SGD(model.parameters(), lr=0.1, momentum=0.9, weight_decay=5e-4)
+optimizer = torch.optim.SGD(model.parameters(), lr=0.01, momentum=0.9, weight_decay=5e-4)
 
 # 数据预处理
 transform = transforms.Compose([
@@ -121,6 +119,13 @@ trainloader = torch.utils.data.DataLoader(trainset, batch_size=128, shuffle=True
 testset = torchvision.datasets.CIFAR100(root='./data', train=False, download=True, transform=transform)
 testloader = torch.utils.data.DataLoader(testset, batch_size=100, shuffle=False, num_workers=2)
 
+# 权重初始化函数
+def weights_init(m):
+    if isinstance(m, nn.Conv2d) or isinstance(m, nn.Linear):
+        nn.init.kaiming_normal_(m.weight)
+
+model.apply(weights_init)
+
 # 训练函数
 def train(epoch):
     model.train()
@@ -133,6 +138,7 @@ def train(epoch):
         outputs = model(inputs)
         loss = criterion(outputs, targets)
         loss.backward()
+        torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)  # 添加梯度剪裁，防止梯度爆炸
         optimizer.step()
 
         train_loss += loss.item()
