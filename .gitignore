@@ -20,4 +20,8 @@ bin-release/
 # Ignore the glb/data/ folder
 glb/data/
 
+# Ignore the .idea folder
+.idea/
+
+
 
