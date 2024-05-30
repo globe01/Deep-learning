@@ -200,6 +200,18 @@ if __name__ == '__main__':
         train(epoch)
         test(epoch)
 
+    # 在训练结束时保存模型
+    final_state = {
+        'epoch': epoch,
+        'model_state_dict': model.state_dict(),
+        'optimizer_state_dict': optimizer.state_dict(),
+        'train_losses': train_losses,
+        'test_losses': test_losses,
+        'train_accuracies': train_accuracies,
+        'test_accuracies': test_accuracies,
+    }
+    torch.save(final_state, 'checkpoint/ccnet_final.pth')
+
     # 绘制损失和准确率曲线
     epochs = range(1, 101)
 
