@@ -179,8 +179,8 @@ def test(epoch):
     test_accuracies.append(100. * correct / total)
     print(f"Test Epoch: {epoch}\tLoss: {test_loss / len(testloader):.6f}\tAccuracy: {100. * correct / total:.2f}%")
 
-    # 每10个epoch保存一次模型
-    if epoch % 10 == 0:
+    # 每50个epoch保存一次模型
+    if epoch % 50 == 0:
         state = {
             'epoch': epoch,
             'model_state_dict': model.state_dict(),
@@ -196,7 +196,7 @@ def test(epoch):
 
 if __name__ == '__main__':
     # 训练和测试循环
-    for epoch in range(1, 201):
+    for epoch in range(1, 201):  # 修改为训练200个epoch
         train(epoch)
         test(epoch)
 
@@ -216,7 +216,7 @@ if __name__ == '__main__':
     if not os.path.isdir('curve_result'):
         os.mkdir('curve_result')
 
-    epochs = range(1, 101)
+    epochs = range(1, 201)  # 修改为200个epoch
 
     # 绘制并保存损失曲线
     plt.figure()
