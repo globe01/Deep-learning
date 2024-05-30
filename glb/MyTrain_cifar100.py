@@ -3,6 +3,8 @@ import torch.nn as nn
 import torch.optim as optim
 import torchvision
 import torchvision.transforms as transforms
+import matplotlib.pyplot as plt
+import os
 from cc_attention import CrissCrossAttention  # 确保cc_attention.py在相同目录或已正确导入
 
 class Bottleneck(nn.Module):
@@ -98,7 +100,6 @@ def resnet50_ccnet():
     return ResNet(Bottleneck, [3, 4, 6, 3])
 
 # 定义训练和测试函数
-# 定义设备，可以使用cpu训练
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model = resnet50_ccnet().to(device)
 criterion = nn.CrossEntropyLoss()
@@ -126,6 +127,11 @@ def weights_init(m):
 
 model.apply(weights_init)
 
+train_losses = []
+test_losses = []
+train_accuracies = []
+test_accuracies = []
+
 # 训练函数
 def train(epoch):
     model.train()
@@ -148,6 +154,8 @@ def train(epoch):
 
         print(f"Train Epoch: {epoch} [{batch_idx * len(inputs)}/{len(trainloader.dataset)} ({100. * batch_idx / len(trainloader):.0f}%)]\tLoss: {loss.item():.6f}")
 
+    train_losses.append(train_loss / len(trainloader))
+    train_accuracies.append(100. * correct / total)
     print(f"Train Epoch: {epoch}\tLoss: {train_loss / len(trainloader):.6f}\tAccuracy: {100. * correct / total:.2f}%")
 
 # 测试函数
@@ -167,10 +175,50 @@ def test(epoch):
             total += targets.size(0)
             correct += predicted.eq(targets).sum().item()
 
+    test_losses.append(test_loss / len(testloader))
+    test_accuracies.append(100. * correct / total)
     print(f"Test Epoch: {epoch}\tLoss: {test_loss / len(testloader):.6f}\tAccuracy: {100. * correct / total:.2f}%")
+
+    # 每10个epoch保存一次模型
+    if epoch % 10 == 0:
+        state = {
+            'epoch': epoch,
+            'model_state_dict': model.state_dict(),
+            'optimizer_state_dict': optimizer.state_dict(),
+            'train_losses': train_losses,
+            'test_losses': test_losses,
+            'train_accuracies': train_accuracies,
+            'test_accuracies': test_accuracies,
+        }
+        if not os.path.isdir('checkpoint'):
+            os.mkdir('checkpoint')
+        torch.save(state, f'checkpoint/ccnet_epoch_{epoch}.pth')
 
 if __name__ == '__main__':
     # 训练和测试循环
     for epoch in range(1, 101):
         train(epoch)
         test(epoch)
+
+    # 绘制损失和准确率曲线
+    epochs = range(1, 101)
+
+    plt.figure(figsize=(12, 4))
+
+    plt.subplot(1, 2, 1)
+    plt.plot(epochs, train_losses, label='Train Loss')
+    plt.plot(epochs, test_losses, label='Test Loss')
+    plt.xlabel('Epochs')
+    plt.ylabel('Loss')
+    plt.legend()
+    plt.title('Loss Curve')
+
+    plt.subplot(1, 2, 2)
+    plt.plot(epochs, train_accuracies, label='Train Accuracy')
+    plt.plot(epochs, test_accuracies, label='Test Accuracy')
+    plt.xlabel('Epochs')
+    plt.ylabel('Accuracy')
+    plt.legend()
+    plt.title('Accuracy Curve')
+
+    plt.show()
