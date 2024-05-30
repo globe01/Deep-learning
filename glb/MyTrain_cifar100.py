@@ -196,7 +196,7 @@ def test(epoch):
 
 if __name__ == '__main__':
     # 训练和测试循环
-    for epoch in range(1, 101):
+    for epoch in range(1, 201):
         train(epoch)
         test(epoch)
 
@@ -212,25 +212,31 @@ if __name__ == '__main__':
     }
     torch.save(final_state, 'checkpoint/ccnet_final.pth')
 
-    # 绘制损失和准确率曲线
+    # 创建保存曲线结果的文件夹
+    if not os.path.isdir('curve_result'):
+        os.mkdir('curve_result')
+
     epochs = range(1, 101)
 
-    plt.figure(figsize=(12, 4))
-
-    plt.subplot(1, 2, 1)
+    # 绘制并保存损失曲线
+    plt.figure()
     plt.plot(epochs, train_losses, label='Train Loss')
     plt.plot(epochs, test_losses, label='Test Loss')
     plt.xlabel('Epochs')
     plt.ylabel('Loss')
     plt.legend()
     plt.title('Loss Curve')
+    plt.savefig('curve_result/loss_curve.png')
 
-    plt.subplot(1, 2, 2)
+    # 绘制并保存准确率曲线
+    plt.figure()
     plt.plot(epochs, train_accuracies, label='Train Accuracy')
     plt.plot(epochs, test_accuracies, label='Test Accuracy')
     plt.xlabel('Epochs')
     plt.ylabel('Accuracy')
     plt.legend()
     plt.title('Accuracy Curve')
+    plt.savefig('curve_result/accuracy_curve.png')
 
+    # 显示图形
     plt.show()
