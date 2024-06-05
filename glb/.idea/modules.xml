@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/复现CCNet+ResNet.iml" filepath="$PROJECT_DIR$/.idea/复现CCNet+ResNet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/CCNet-master.iml" filepath="$PROJECT_DIR$/.idea/CCNet-master.iml" />
     </modules>
   </component>
 </project>

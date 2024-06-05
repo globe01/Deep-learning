@@ -16,7 +16,6 @@ from utils.pyt_utils import load_model
 from inplace_abn import InPlaceABN, InPlaceABNSync
 BatchNorm2d = functools.partial(InPlaceABNSync, activation='identity')
 
-# 定义辅助函数outS，用于计算经过一系列下采样操作后的输出尺寸
 def outS(i):
     i = int(i)
     i = (i+1)/2
@@ -24,15 +23,12 @@ def outS(i):
     i = (i+1)/2
     return i
 
-# 定义辅助函数conv3x3，用于创建一个3x3卷积层，并在每侧添加1个像素的填充
 def conv3x3(in_planes, out_planes, stride=1):
     "3x3 convolution with padding"
     return nn.Conv2d(in_planes, out_planes, kernel_size=3, stride=stride,
                      padding=1, bias=False)
 
 
-# ResNet中常用的基本构建模块Bottleneck模块，包含三个卷积层、批归一化和ReLU激活函数，
-# 还有一个可选的下采样层用于匹配输入和输出的维度
 class Bottleneck(nn.Module):
     expansion = 4
     def __init__(self, inplanes, planes, stride=1, dilation=1, downsample=None, fist_dilation=1, multi_grid=1):
@@ -72,9 +68,6 @@ class Bottleneck(nn.Module):
 
         return out
 
-
-# PSPModule是PSPNet中用来进行金字塔池化的模块。
-# 包括若干个不同尺寸的平均池化层、卷积层和批归一化层，并在最后进行特征融合
 class PSPModule(nn.Module):
     """
     Reference: 
@@ -103,8 +96,6 @@ class PSPModule(nn.Module):
         bottle = self.bottleneck(torch.cat(priors, 1))
         return bottle
 
-# 定义RCCAModule类，在CCNet中用来进行递归Criss-Cross注意力操作的模块。
-# 包括卷积层、Criss-Cross注意力模块和特征融合层
 class RCCAModule(nn.Module):
     def __init__(self, in_channels, out_channels, num_classes):
         super(RCCAModule, self).__init__()
@@ -131,10 +122,6 @@ class RCCAModule(nn.Module):
         output = self.bottleneck(torch.cat([x, output], 1))
         return output
 
-
-# 定义ResNet，结合了论文中所说的Criss-Cross注意力模块，
-# 整个网络包括卷积层、批归一化层、最大池化层、残差层、PSP模块和RCCA模块
-# 并在最后加入了PSPModule和RCCAModule模块
 class ResNet(nn.Module):
     def __init__(self, block, layers, num_classes, criterion, recurrence):
         self.inplanes = 128
@@ -168,7 +155,6 @@ class ResNet(nn.Module):
         self.criterion = criterion
         self.recurrence = recurrence
 
-    # 构建残差层
     def _make_layer(self, block, planes, blocks, stride=1, dilation=1, multi_grid=1):
         downsample = None
         if stride != 1 or self.inplanes != planes * block.expansion:
@@ -186,7 +172,6 @@ class ResNet(nn.Module):
 
         return nn.Sequential(*layers)
 
-    # 前向传播
     def forward(self, x, labels=None):
         x = self.relu1(self.bn1(self.conv1(x)))
         x = self.relu2(self.bn2(self.conv2(x)))
@@ -205,8 +190,7 @@ class ResNet(nn.Module):
         else:
             return outs
 
-# 用Seg_Model函数来创建带有Criss-Cross注意力模块的ResNet模型
-# 可以指定类别数、损失函数、预训练模型和递归次数等参数
+
 def Seg_Model(num_classes, criterion=None, pretrained_model=None, recurrence=0, **kwargs):
     model = ResNet(Bottleneck,[3, 4, 23, 3], num_classes, criterion, recurrence)
 

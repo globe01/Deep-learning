@@ -6,6 +6,7 @@ import torchvision.transforms as transforms
 import matplotlib.pyplot as plt
 import os
 from cc_attention import CrissCrossAttention  # 确保cc_attention.py在相同目录或已正确导入
+import pandas as pd  # 导入pandas库
 
 class Bottleneck(nn.Module):
     expansion = 4
@@ -132,6 +133,9 @@ test_losses = []
 train_accuracies = []
 test_accuracies = []
 
+# 创建DataFrame存储训练和测试的结果
+results_df = pd.DataFrame(columns=["Epoch", "Train Loss", "Test Loss", "Train Accuracy", "Test Accuracy"])
+
 # 训练函数
 def train(epoch):
     model.train()
@@ -179,6 +183,10 @@ def test(epoch):
     test_accuracies.append(100. * correct / total)
     print(f"Test Epoch: {epoch}\tLoss: {test_loss / len(testloader):.6f}\tAccuracy: {100. * correct / total:.2f}%")
 
+    # 保存每个epoch的结果到DataFrame
+    results_df.loc[epoch] = [epoch, train_losses[-1], test_losses[-1], train_accuracies[-1], test_accuracies[-1]]
+    results_df.to_excel("training_results.xlsx", index=False)
+
     # 每50个epoch保存一次模型
     if epoch % 50 == 0:
         state = {
@@ -196,7 +204,7 @@ def test(epoch):
 
 if __name__ == '__main__':
     # 训练和测试循环
-    for epoch in range(1, 201):  # 修改为训练200个epoch
+    for epoch in range(1, 101):  # 训练100个epoch
         train(epoch)
         test(epoch)
 
@@ -216,7 +224,7 @@ if __name__ == '__main__':
     if not os.path.isdir('curve_result'):
         os.mkdir('curve_result')
 
-    epochs = range(1, 201)  # 修改为200个epoch
+    epochs = range(1, 101)  # 100个epoch
 
     # 绘制并保存损失曲线
     plt.figure()
