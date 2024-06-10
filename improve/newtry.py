@@ -1,3 +1,6 @@
+# ============================================================
+# Imports
+# ============================================================
 import os
 import torch
 import torchvision
@@ -9,7 +12,9 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 
-# Criss-Cross Attention module
+# ============================================================
+# Criss-Cross Attention Module
+# ============================================================
 class CrissCrossAttention(nn.Module):
     """ Criss-Cross Attention Module"""
 
@@ -46,7 +51,9 @@ class CrissCrossAttention(nn.Module):
     def INF(self, B, H, W):
         return -torch.diag(torch.tensor(float("inf")).cuda().repeat(H), 0).unsqueeze(0).repeat(B * W, 1, 1)
 
-
+# ============================================================
+# Basic and Bottleneck Blocks for ResNet
+# ============================================================
 # Basic Block for ResNet
 class BasicBlock(nn.Module):
     expansion = 1
@@ -102,6 +109,10 @@ class Bottleneck(nn.Module):
         return out
 
 
+
+# ============================================================
+# RCCAModule，调用CrissCrossAttention
+# ============================================================
 class RCCAModule(nn.Module):
     def __init__(self, in_channels, out_channels, num_classes):
         super(RCCAModule, self).__init__()
@@ -130,7 +141,9 @@ class RCCAModule(nn.Module):
         return output
 
 
+# ============================================================
 # ResNet加上注意力机制cca
+# ============================================================
 class ResNet(nn.Module):
     def __init__(self, block, num_blocks, num_classes=10):
         super(ResNet, self).__init__()
@@ -143,7 +156,7 @@ class ResNet(nn.Module):
         self.layer1 = self._make_layer(block, 64, num_blocks[0], stride=1)
         self.layer2 = self._make_layer(block, 128, num_blocks[1], stride=2)
         self.layer3 = self._make_layer(block, 256, num_blocks[2], stride=2)
-        self.layer4 = self._make_layer(block, 512, num_blocks[3], stride=2)
+        self.layer4 = self._make_layer(block, 512, num_blocks[3], stride=1) # layer4的stride改为1
 
 
 
@@ -167,7 +180,8 @@ class ResNet(nn.Module):
 
     def forward(self, x):
         x = torch.relu(self.bn1(self.conv1(x)))
-        x = torch.max_pool2d(x, kernel_size=3, stride=2, padding=1)
+        # 去除掉第一个最大池化层
+        # x = torch.max_pool2d(x, kernel_size=3, stride=2, padding=1)
         x = self.layer1(x)
         x = self.layer2(x)
         x = self.layer3(x)
@@ -188,6 +202,10 @@ def ResNet50(num_classes=100):
     return ResNet(Bottleneck, [3, 4, 6, 3], num_classes)
 
 
+
+# ============================================================
+# 训练和验证
+# ============================================================
 # 训练函数
 def train(model, trainloader, criterion, optimizer, epoch, device):
     model.train()
@@ -243,6 +261,10 @@ def test(model, testloader, criterion, epoch, device):
     return test_loss, test_accuracy
 
 
+
+# ============================================================
+# 主函数
+# ============================================================
 if __name__ == '__main__':
     # 创建结果保存文件夹
     os.makedirs('resnet50_ccnet_result', exist_ok=True)
@@ -252,8 +274,8 @@ if __name__ == '__main__':
 
     # 定义数据增强和预处理
     transform = transforms.Compose([
-        transforms.RandomHorizontalFlip(),
-        transforms.RandomCrop(32, padding=4),
+        transforms.RandomCrop(size=(32, 32), padding=4),
+        transforms.RandomHorizontalFlip(p=0.5), # 增加p参数，使得随机水平翻转的概率为0.5
         transforms.ToTensor(),
         transforms.Normalize(mean, std)
     ])
@@ -263,7 +285,7 @@ if __name__ == '__main__':
     trainloader = DataLoader(trainset, batch_size=128, shuffle=True, num_workers=2)
 
     testset = torchvision.datasets.CIFAR100(root='./data', train=False, download=True, transform=transform)
-    testloader = DataLoader(testset, batch_size=100, shuffle=False, num_workers=2)
+    testloader = DataLoader(testset, batch_size=128, shuffle=False, num_workers=2)
 
     classes = trainset.classes
 
@@ -277,9 +299,31 @@ if __name__ == '__main__':
 
     # 定义损失函数和优化器
     criterion = nn.CrossEntropyLoss()
-    optimizer = optim.SGD(model.parameters(), lr=0.01, momentum=0.9, weight_decay=1e-3)
-    #scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=30, gamma=0.1)
-    scheduler = optim.lr_scheduler.CosineAnnealingWarmRestarts(optimizer, T_0=15, T_mult=2, eta_min=0.0001)
+    optimizer = optim.SGD(model.parameters(), lr=0.1, momentum=0.9, weight_decay=5e-4)
+
+    # 学习率调度器
+    # StepLR适用于大多数基础场景，每隔step_size个epoch，学习率乘以gamma
+    # scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=30, gamma=0.1)
+
+    # 换成CosineAnnealingWarmRestarts调度器，T_0为初始周期，T_mult为周期倍数，eta_min为最小学习率
+    # CosineAnnealingWarmRestarts适用于需要长时间训练且可能存在多个局部最优的场景，通过周期性重启学习率来避免模型陷入局部最优
+    # scheduler = optim.lr_scheduler.CosineAnnealingWarmRestarts(optimizer, T_0=15, T_mult=2, eta_min=0.0001)
+
+    # 学习率预热
+    def linear_warmup(step, warmup_steps, base_lr):
+        return base_lr * step / warmup_steps
+
+    warmup_epochs = 5
+    base_lr = 0.1
+    warmup_steps = warmup_epochs * len(trainloader)
+
+    # MultiStepLR适用于对训练过程有一定了解并希望在特定点进行学习率调整的场景
+
+    # 训练200个epoch，前5个epoch学习率线性预热到0.1
+    # scheduler = optim.lr_scheduler.MultiStepLR(optimizer, milestones=[60, 120, 160], gamma=0.2)
+
+    # 训练100个epoch，前5个epoch学习率线性预热到0.1
+    scheduler = optim.lr_scheduler.MultiStepLR(optimizer, milestones=[30, 60], gamma=0.2)
 
     # 记录每个epoch的loss和accuracy
     train_losses = []
