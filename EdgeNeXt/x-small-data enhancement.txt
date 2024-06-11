@@ -1,0 +1,204 @@
+Extracting ./data/cifar-100-python.tar.gz to ./data
+Files already downloaded and verified
+Using device: cuda
+Epoch: 0, Loss: 4.022487238544942, Accuracy: 8.924
+Epoch: 0, Test Loss: 3.762966158390045, Test Accuracy: 12.24
+Epoch: 1, Loss: 3.7305759011632036, Accuracy: 12.96
+Epoch: 1, Test Loss: 3.627187874317169, Test Accuracy: 13.99
+Epoch: 2, Loss: 3.67638313556876, Accuracy: 14.156
+Epoch: 2, Test Loss: 3.5922780060768127, Test Accuracy: 16.43
+Epoch: 3, Loss: 3.6617716578266504, Accuracy: 14.316
+Epoch: 3, Test Loss: 3.5848060250282288, Test Accuracy: 16.43
+Epoch: 4, Loss: 3.641881814698124, Accuracy: 14.742
+Epoch: 4, Test Loss: 3.5626110935211184, Test Accuracy: 16.29
+Epoch: 5, Loss: 3.6396521015850176, Accuracy: 14.588
+Epoch: 5, Test Loss: 3.5678913450241088, Test Accuracy: 16.71
+Epoch: 6, Loss: 3.627093298660825, Accuracy: 15.0
+Epoch: 6, Test Loss: 3.5722836899757384, Test Accuracy: 16.88
+Epoch: 7, Loss: 3.621735267931848, Accuracy: 15.116
+Epoch: 7, Test Loss: 3.5056905055046084, Test Accuracy: 17.88
+Epoch: 8, Loss: 3.598069787330335, Accuracy: 15.646
+Epoch: 8, Test Loss: 3.5199035215377807, Test Accuracy: 17.64
+Epoch: 9, Loss: 3.5625798757118945, Accuracy: 16.284
+Epoch: 9, Test Loss: 3.4327583622932436, Test Accuracy: 19.4
+Epoch: 10, Loss: 3.5267830437711436, Accuracy: 16.844
+Epoch: 10, Test Loss: 3.378285813331604, Test Accuracy: 19.69
+Epoch: 11, Loss: 3.51048128928065, Accuracy: 17.188
+Epoch: 11, Test Loss: 3.4278535413742066, Test Accuracy: 19.75
+Epoch: 12, Loss: 3.498219628468194, Accuracy: 17.49
+Epoch: 12, Test Loss: 3.4125206899642944, Test Accuracy: 19.49
+Epoch: 13, Loss: 3.4934277321066696, Accuracy: 17.264
+Epoch: 13, Test Loss: 3.338989496231079, Test Accuracy: 20.89
+Epoch: 14, Loss: 3.4886503890347296, Accuracy: 17.638
+Epoch: 14, Test Loss: 3.3750464487075806, Test Accuracy: 19.57
+Epoch: 15, Loss: 3.4817166877219745, Accuracy: 17.73
+Epoch: 15, Test Loss: 3.366083402633667, Test Accuracy: 19.84
+Epoch: 16, Loss: 3.4636830393310705, Accuracy: 17.888
+Epoch: 16, Test Loss: 3.330865001678467, Test Accuracy: 21.0
+Epoch: 17, Loss: 3.4613374316174053, Accuracy: 17.884
+Epoch: 17, Test Loss: 3.302130422592163, Test Accuracy: 21.4
+Epoch: 18, Loss: 3.4449864098483034, Accuracy: 18.448
+Epoch: 18, Test Loss: 3.3293161249160765, Test Accuracy: 20.6
+Epoch: 19, Loss: 3.444851151512712, Accuracy: 18.244
+Epoch: 19, Test Loss: 3.379297978878021, Test Accuracy: 19.86
+Epoch: 20, Loss: 3.4343692640514325, Accuracy: 18.766
+Epoch: 20, Test Loss: 3.290776927471161, Test Accuracy: 21.75
+Epoch: 21, Loss: 3.434374049496468, Accuracy: 18.338
+Epoch: 21, Test Loss: 3.315007486343384, Test Accuracy: 21.26
+Epoch: 22, Loss: 3.4306835670910223, Accuracy: 18.744
+Epoch: 22, Test Loss: 3.285510039329529, Test Accuracy: 21.63
+Epoch: 23, Loss: 3.4173075841820757, Accuracy: 18.898
+Epoch: 23, Test Loss: 3.2909592270851133, Test Accuracy: 21.34
+Epoch: 24, Loss: 3.4223338051525225, Accuracy: 18.664
+Epoch: 24, Test Loss: 3.341305723190308, Test Accuracy: 20.51
+Epoch: 25, Loss: 3.4259606163824916, Accuracy: 18.64
+Epoch: 25, Test Loss: 3.290746955871582, Test Accuracy: 21.31
+Epoch: 26, Loss: 3.4151047605382816, Accuracy: 18.784
+Epoch: 26, Test Loss: 3.3147438526153565, Test Accuracy: 22.04
+Epoch: 27, Loss: 3.409234378648841, Accuracy: 18.772
+Epoch: 27, Test Loss: 3.291999695301056, Test Accuracy: 20.55
+Epoch: 28, Loss: 3.417296634610657, Accuracy: 18.748
+Epoch: 28, Test Loss: 3.3530735397338867, Test Accuracy: 20.84
+Epoch: 29, Loss: 3.403480949914059, Accuracy: 19.104
+Epoch: 29, Test Loss: 3.2702710795402528, Test Accuracy: 22.7
+Epoch: 30, Loss: 3.233846518084826, Accuracy: 22.46
+Epoch: 30, Test Loss: 3.1048472905158997, Test Accuracy: 25.44
+Epoch: 31, Loss: 3.1836478954081033, Accuracy: 23.484
+Epoch: 31, Test Loss: 3.062958786487579, Test Accuracy: 26.3
+Epoch: 32, Loss: 3.166846318013223, Accuracy: 23.642
+Epoch: 32, Test Loss: 3.0551498436927798, Test Accuracy: 26.63
+Epoch: 33, Loss: 3.158365849033951, Accuracy: 23.984
+Epoch: 33, Test Loss: 3.048106138706207, Test Accuracy: 26.92
+Epoch: 34, Loss: 3.1472049625328435, Accuracy: 23.998
+Epoch: 34, Test Loss: 3.030789113044739, Test Accuracy: 27.29
+Epoch: 35, Loss: 3.1436155641170416, Accuracy: 24.308
+Epoch: 35, Test Loss: 3.0314610266685484, Test Accuracy: 26.91
+Epoch: 36, Loss: 3.1424019751341445, Accuracy: 24.142
+Epoch: 36, Test Loss: 3.0228164410591125, Test Accuracy: 27.05
+Epoch: 37, Loss: 3.132901769160005, Accuracy: 24.356
+Epoch: 37, Test Loss: 3.0227979135513308, Test Accuracy: 27.05
+Epoch: 38, Loss: 3.1330637736698552, Accuracy: 24.458
+Epoch: 38, Test Loss: 3.027588636875153, Test Accuracy: 26.7
+Epoch: 39, Loss: 3.1314517500455423, Accuracy: 24.46
+Epoch: 39, Test Loss: 3.021028447151184, Test Accuracy: 27.03
+Epoch: 40, Loss: 3.1251700845215935, Accuracy: 24.47
+Epoch: 40, Test Loss: 3.0170002007484436, Test Accuracy: 27.17
+Epoch: 41, Loss: 3.123782300583237, Accuracy: 24.46
+Epoch: 41, Test Loss: 3.0046248507499693, Test Accuracy: 27.22
+Epoch: 42, Loss: 3.12145577916099, Accuracy: 24.41
+Epoch: 42, Test Loss: 3.004015941619873, Test Accuracy: 27.24
+Epoch: 43, Loss: 3.117435035193363, Accuracy: 24.452
+Epoch: 43, Test Loss: 2.984414756298065, Test Accuracy: 28.13
+Epoch: 44, Loss: 3.114587589298063, Accuracy: 24.782
+Epoch: 44, Test Loss: 3.0009249782562257, Test Accuracy: 27.43
+Epoch: 45, Loss: 3.1132961831739188, Accuracy: 24.752
+Epoch: 45, Test Loss: 3.002907462120056, Test Accuracy: 27.41
+Epoch: 46, Loss: 3.1091387515787576, Accuracy: 24.978
+Epoch: 46, Test Loss: 3.000905251502991, Test Accuracy: 27.22
+Epoch: 47, Loss: 3.1143073846617013, Accuracy: 24.692
+Epoch: 47, Test Loss: 2.9989225816726686, Test Accuracy: 27.11
+Epoch: 48, Loss: 3.1206125091103947, Accuracy: 24.53
+Epoch: 48, Test Loss: 2.974748945236206, Test Accuracy: 28.13
+Epoch: 49, Loss: 3.1091194000390483, Accuracy: 24.936
+Epoch: 49, Test Loss: 2.9964473342895506, Test Accuracy: 26.94
+Epoch: 50, Loss: 3.117599045224202, Accuracy: 24.724
+Epoch: 50, Test Loss: 2.967081801891327, Test Accuracy: 27.49
+Epoch: 51, Loss: 3.111815098911295, Accuracy: 24.6
+Epoch: 51, Test Loss: 2.978349688053131, Test Accuracy: 28.0
+Epoch: 52, Loss: 3.1112374552070636, Accuracy: 24.756
+Epoch: 52, Test Loss: 2.982158312797546, Test Accuracy: 27.5
+Epoch: 53, Loss: 3.1097288454889944, Accuracy: 24.726
+Epoch: 53, Test Loss: 2.995732536315918, Test Accuracy: 27.11
+Epoch: 54, Loss: 3.0969766954631757, Accuracy: 24.874
+Epoch: 54, Test Loss: 2.982207202911377, Test Accuracy: 27.14
+Epoch: 55, Loss: 3.0993849743357704, Accuracy: 24.898
+Epoch: 55, Test Loss: 2.9602237582206725, Test Accuracy: 27.37
+Epoch: 56, Loss: 3.099916922161951, Accuracy: 25.21
+Epoch: 56, Test Loss: 2.995866103172302, Test Accuracy: 26.9
+Epoch: 57, Loss: 3.0990030283818157, Accuracy: 24.978
+Epoch: 57, Test Loss: 2.9788277554512024, Test Accuracy: 27.42
+Epoch: 58, Loss: 3.0977873527790276, Accuracy: 25.046
+Epoch: 58, Test Loss: 2.966446998119354, Test Accuracy: 27.28
+Epoch: 59, Loss: 3.097539159038183, Accuracy: 25.032
+Epoch: 59, Test Loss: 2.9769893097877502, Test Accuracy: 27.28
+Epoch: 60, Loss: 3.033438309379246, Accuracy: 26.148
+Epoch: 60, Test Loss: 2.9182391500473024, Test Accuracy: 28.68
+Epoch: 61, Loss: 3.0153094246564316, Accuracy: 26.816
+Epoch: 61, Test Loss: 2.9143493032455443, Test Accuracy: 28.61
+Epoch: 62, Loss: 3.0138919024211366, Accuracy: 26.872
+Epoch: 62, Test Loss: 2.911468460559845, Test Accuracy: 28.78
+Epoch: 63, Loss: 3.009230807004377, Accuracy: 26.954
+Epoch: 63, Test Loss: 2.9113930320739745, Test Accuracy: 28.81
+Epoch: 64, Loss: 3.0084718304217013, Accuracy: 26.892
+Epoch: 64, Test Loss: 2.9118446683883668, Test Accuracy: 28.72
+Epoch: 65, Loss: 3.0035351347130583, Accuracy: 26.918
+Epoch: 65, Test Loss: 2.905584571361542, Test Accuracy: 28.86
+Epoch: 66, Loss: 3.001294392758928, Accuracy: 27.19
+Epoch: 66, Test Loss: 2.916746850013733, Test Accuracy: 28.44
+Epoch: 67, Loss: 3.0017988748867492, Accuracy: 27.064
+Epoch: 67, Test Loss: 2.9019820046424867, Test Accuracy: 28.84
+Epoch: 68, Loss: 2.9987443767850053, Accuracy: 26.894
+Epoch: 68, Test Loss: 2.905545697212219, Test Accuracy: 28.82
+Epoch: 69, Loss: 3.0057827749520616, Accuracy: 26.832
+Epoch: 69, Test Loss: 2.9028621125221252, Test Accuracy: 28.82
+Epoch: 70, Loss: 3.000361028534677, Accuracy: 27.058
+Epoch: 70, Test Loss: 2.904391303062439, Test Accuracy: 28.81
+Epoch: 71, Loss: 2.9975581876457196, Accuracy: 27.134
+Epoch: 71, Test Loss: 2.905127532482147, Test Accuracy: 28.79
+Epoch: 72, Loss: 2.997745498062095, Accuracy: 27.242
+Epoch: 72, Test Loss: 2.9053647208213804, Test Accuracy: 28.52
+Epoch: 73, Loss: 2.99454838052735, Accuracy: 27.032
+Epoch: 73, Test Loss: 2.8965243673324585, Test Accuracy: 29.18
+Epoch: 74, Loss: 2.99066135401616, Accuracy: 27.182
+Epoch: 74, Test Loss: 2.894024167060852, Test Accuracy: 29.08
+Epoch: 75, Loss: 2.991224971268793, Accuracy: 27.27
+Epoch: 75, Test Loss: 2.892331273555756, Test Accuracy: 29.17
+Epoch: 76, Loss: 2.9901156602308268, Accuracy: 27.172
+Epoch: 76, Test Loss: 2.9052848029136658, Test Accuracy: 28.65
+Epoch: 77, Loss: 2.9907675063823493, Accuracy: 27.238
+Epoch: 77, Test Loss: 2.9051532673835756, Test Accuracy: 28.67
+Epoch: 78, Loss: 2.9897834718074945, Accuracy: 27.106
+Epoch: 78, Test Loss: 2.894615201950073, Test Accuracy: 29.04
+Epoch: 79, Loss: 2.9877778843540668, Accuracy: 27.122
+Epoch: 79, Test Loss: 2.8961779832839967, Test Accuracy: 28.95
+Epoch: 80, Loss: 2.9860541302224863, Accuracy: 27.302
+Epoch: 80, Test Loss: 2.8909725284576417, Test Accuracy: 29.12
+Epoch: 81, Loss: 2.9867337341503717, Accuracy: 27.116
+Epoch: 81, Test Loss: 2.893545100688934, Test Accuracy: 29.09
+Epoch: 82, Loss: 2.98829804113149, Accuracy: 27.334
+Epoch: 82, Test Loss: 2.903949935436249, Test Accuracy: 28.77
+Epoch: 83, Loss: 2.988063054926255, Accuracy: 27.202
+Epoch: 83, Test Loss: 2.8860084342956545, Test Accuracy: 29.08
+Epoch: 84, Loss: 2.9785439035166865, Accuracy: 27.412
+Epoch: 84, Test Loss: 2.902324378490448, Test Accuracy: 28.77
+Epoch: 85, Loss: 2.9843479965044106, Accuracy: 27.372
+Epoch: 85, Test Loss: 2.888872764110565, Test Accuracy: 29.16
+Epoch: 86, Loss: 2.988961054540961, Accuracy: 27.342
+Epoch: 86, Test Loss: 2.897295298576355, Test Accuracy: 28.98
+Epoch: 87, Loss: 2.981025760435997, Accuracy: 27.296
+Epoch: 87, Test Loss: 2.8838372731208803, Test Accuracy: 29.3
+Epoch: 88, Loss: 2.9798214697776855, Accuracy: 27.508
+Epoch: 88, Test Loss: 2.8892904543876647, Test Accuracy: 29.08
+Epoch: 89, Loss: 2.9776292267967674, Accuracy: 27.534
+Epoch: 89, Test Loss: 2.8869879937171934, Test Accuracy: 29.31
+Epoch: 90, Loss: 2.972104534163804, Accuracy: 27.478
+Epoch: 90, Test Loss: 2.8823682141304015, Test Accuracy: 29.36
+Epoch: 91, Loss: 2.968170315408341, Accuracy: 27.68
+Epoch: 91, Test Loss: 2.8824847507476807, Test Accuracy: 29.38
+Epoch: 92, Loss: 2.9680648697611622, Accuracy: 27.624
+Epoch: 92, Test Loss: 2.882786180973053, Test Accuracy: 29.33
+Epoch: 93, Loss: 2.969487757329136, Accuracy: 27.624
+Epoch: 93, Test Loss: 2.881732819080353, Test Accuracy: 29.44
+Epoch: 94, Loss: 2.96965955285465, Accuracy: 27.632
+Epoch: 94, Test Loss: 2.8804671335220338, Test Accuracy: 29.4
+Epoch: 95, Loss: 2.965599637507173, Accuracy: 27.804
+Epoch: 95, Test Loss: 2.8777727842330934, Test Accuracy: 29.45
+Epoch: 96, Loss: 2.9700985162154487, Accuracy: 27.816
+Epoch: 96, Test Loss: 2.881134068965912, Test Accuracy: 29.48
+Epoch: 97, Loss: 2.967804867898107, Accuracy: 27.594
+Epoch: 97, Test Loss: 2.8832510113716125, Test Accuracy: 29.39
+Epoch: 98, Loss: 2.967193515099528, Accuracy: 27.946
+Epoch: 98, Test Loss: 2.880631721019745, Test Accuracy: 29.37
+Epoch: 99, Loss: 2.968668205353915, Accuracy: 27.612
+Epoch: 99, Test Loss: 2.881532905101776, Test Accuracy: 29.4
+Finished Training
