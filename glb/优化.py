@@ -325,10 +325,10 @@ if __name__ == '__main__':
     transform = transforms.Compose([
         transforms.RandomCrop(size=(32, 32), padding=4),
         transforms.RandomHorizontalFlip(p=0.5), # 增加p参数，使得随机水平翻转的概率为0.5
-        transforms.AutoAugment(policy=torchvision.transforms.AutoAugmentPolicy.CIFAR10),  # 新增自动数据增强
+        # transforms.AutoAugment(policy=torchvision.transforms.AutoAugmentPolicy.CIFAR10),  # 新增自动数据增强
         transforms.ToTensor(),
         transforms.Normalize(mean, std),
-        transforms.RandomErasing(p=0.25)  # 新增随机擦除，p=0.25
+        # transforms.RandomErasing(p=0.25)  # 新增随机擦除，p=0.25
     ])
 
     # 加载CIFAR-100数据集
@@ -389,7 +389,7 @@ if __name__ == '__main__':
     test_accuracies = []
 
     # 训练和评估模型
-    for epoch in range(230):  # 训练230个epoch
+    for epoch in range(100):  # 训练100个epoch
 
         #---学习率预热---#
         if epoch < warmup_epochs:
@@ -415,7 +415,7 @@ if __name__ == '__main__':
 
     # 保存训练和测试结果到Excel文件
     results_df = pd.DataFrame({
-        'Epoch': range(1, 231),
+        'Epoch': range(1, 101),
         'Train Loss': train_losses,
         'Train Accuracy': train_accuracies,
         'Test Loss': test_losses,
@@ -427,16 +427,16 @@ if __name__ == '__main__':
     # 绘制Loss和Accuracy曲线并保存
     plt.figure(figsize=(10, 5))
     plt.subplot(1, 2, 1)
-    plt.plot(range(1, 231), train_losses, label='Train Loss')
-    plt.plot(range(1, 231), test_losses, label='Test Loss')
+    plt.plot(range(1, 101), train_losses, label='Train Loss')
+    plt.plot(range(1, 101), test_losses, label='Test Loss')
     plt.xlabel('Epoch')
     plt.ylabel('Loss')
     plt.title('Loss vs. Epochs')
     plt.legend()
 
     plt.subplot(1, 2, 2)
-    plt.plot(range(1, 231), train_accuracies, label='Train Accuracy')
-    plt.plot(range(1, 231), test_accuracies, label='Test Accuracy')
+    plt.plot(range(1, 101), train_accuracies, label='Train Accuracy')
+    plt.plot(range(1, 101), test_accuracies, label='Test Accuracy')
     plt.xlabel('Epoch')
     plt.ylabel('Accuracy')
     plt.title('Accuracy vs. Epochs')
