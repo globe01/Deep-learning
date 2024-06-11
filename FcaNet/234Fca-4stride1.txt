@@ -1,0 +1,520 @@
+root@autodl-container-f07046baab-6fedd398:~/autodl-tmp# python New-Copy2-4layerstride.py 
+Files already downloaded and verified
+Files already downloaded and verified
+[Epoch:    1], Loss: 5.208, Acc: 1.372, Correct 72.0 / Total 5248.0
+[Epoch:    1], Loss: 4.984, Acc: 1.997, Correct 207.0 / Total 10368.0
+[Epoch:    1], Loss: 4.790, Acc: 2.602, Correct 403.0 / Total 15488.0
+[Epoch:    1], Loss: 4.657, Acc: 3.013, Correct 621.0 / Total 20608.0
+[Epoch:    1], Loss: 4.548, Acc: 3.444, Correct 886.0 / Total 25728.0
+[Epoch:    1], Loss: 4.465, Acc: 3.968, Correct 1224.0 / Total 30848.0
+[Epoch:    1], Loss: 4.399, Acc: 4.418, Correct 1589.0 / Total 35968.0
+[Epoch:    1], Loss: 4.340, Acc: 4.885, Correct 2007.0 / Total 41088.0
+[Epoch:    1], Loss: 4.289, Acc: 5.257, Correct 2429.0 / Total 46208.0
+[Epoch:    1], Acc: 9.260
+Best Model Saving...
+Current Learning Rate: [0.0989084726566536]
+[Epoch:    2], Loss: 3.827, Acc: 9.737, Correct 511.0 / Total 5248.0
+[Epoch:    2], Loss: 3.797, Acc: 10.050, Correct 1042.0 / Total 10368.0
+[Epoch:    2], Loss: 3.763, Acc: 10.563, Correct 1636.0 / Total 15488.0
+[Epoch:    2], Loss: 3.742, Acc: 11.107, Correct 2289.0 / Total 20608.0
+[Epoch:    2], Loss: 3.719, Acc: 11.501, Correct 2959.0 / Total 25728.0
+[Epoch:    2], Loss: 3.695, Acc: 11.942, Correct 3684.0 / Total 30848.0
+[Epoch:    2], Loss: 3.670, Acc: 12.425, Correct 4469.0 / Total 35968.0
+[Epoch:    2], Loss: 3.645, Acc: 12.892, Correct 5297.0 / Total 41088.0
+[Epoch:    2], Loss: 3.619, Acc: 13.402, Correct 6193.0 / Total 46208.0
+[Epoch:    2], Acc: 16.520
+Best Model Saving...
+Current Learning Rate: [0.09568159560924791]
+[Epoch:    3], Loss: 3.230, Acc: 20.789, Correct 1091.0 / Total 5248.0
+[Epoch:    3], Loss: 3.252, Acc: 20.264, Correct 2101.0 / Total 10368.0
+[Epoch:    3], Loss: 3.224, Acc: 20.648, Correct 3198.0 / Total 15488.0
+[Epoch:    3], Loss: 3.195, Acc: 21.157, Correct 4360.0 / Total 20608.0
+[Epoch:    3], Loss: 3.175, Acc: 21.451, Correct 5519.0 / Total 25728.0
+[Epoch:    3], Loss: 3.143, Acc: 22.053, Correct 6803.0 / Total 30848.0
+[Epoch:    3], Loss: 3.118, Acc: 22.462, Correct 8079.0 / Total 35968.0
+[Epoch:    3], Loss: 3.091, Acc: 22.873, Correct 9398.0 / Total 41088.0
+[Epoch:    3], Loss: 3.062, Acc: 23.314, Correct 10773.0 / Total 46208.0
+[Epoch:    3], Acc: 22.370
+Best Model Saving...
+Current Learning Rate: [0.09046039886902862]
+[Epoch:    4], Loss: 2.745, Acc: 29.535, Correct 1550.0 / Total 5248.0
+[Epoch:    4], Loss: 2.730, Acc: 29.475, Correct 3056.0 / Total 10368.0
+[Epoch:    4], Loss: 2.685, Acc: 30.288, Correct 4691.0 / Total 15488.0
+[Epoch:    4], Loss: 2.678, Acc: 30.643, Correct 6315.0 / Total 20608.0
+[Epoch:    4], Loss: 2.660, Acc: 31.052, Correct 7989.0 / Total 25728.0
+[Epoch:    4], Loss: 2.636, Acc: 31.590, Correct 9745.0 / Total 30848.0
+[Epoch:    4], Loss: 2.616, Acc: 31.862, Correct 11460.0 / Total 35968.0
+[Epoch:    4], Loss: 2.597, Acc: 32.224, Correct 13240.0 / Total 41088.0
+[Epoch:    4], Loss: 2.576, Acc: 32.629, Correct 15077.0 / Total 46208.0
+[Epoch:    4], Acc: 29.610
+Best Model Saving...
+Current Learning Rate: [0.08347307378762497]
+[Epoch:    5], Loss: 2.318, Acc: 37.957, Correct 1992.0 / Total 5248.0
+[Epoch:    5], Loss: 2.318, Acc: 38.339, Correct 3975.0 / Total 10368.0
+[Epoch:    5], Loss: 2.315, Acc: 38.359, Correct 5941.0 / Total 15488.0
+[Epoch:    5], Loss: 2.308, Acc: 38.524, Correct 7939.0 / Total 20608.0
+[Epoch:    5], Loss: 2.308, Acc: 38.332, Correct 9862.0 / Total 25728.0
+[Epoch:    5], Loss: 2.302, Acc: 38.453, Correct 11862.0 / Total 30848.0
+[Epoch:    5], Loss: 2.293, Acc: 38.787, Correct 13951.0 / Total 35968.0
+[Epoch:    5], Loss: 2.284, Acc: 38.924, Correct 15993.0 / Total 41088.0
+[Epoch:    5], Loss: 2.277, Acc: 39.112, Correct 18073.0 / Total 46208.0
+[Epoch:    5], Acc: 35.730
+Best Model Saving...
+Current Learning Rate: [0.07502500000000001]
+[Epoch:    6], Loss: 2.091, Acc: 43.559, Correct 2286.0 / Total 5248.0
+[Epoch:    6], Loss: 2.094, Acc: 43.654, Correct 4526.0 / Total 10368.0
+[Epoch:    6], Loss: 2.093, Acc: 43.363, Correct 6716.0 / Total 15488.0
+[Epoch:    6], Loss: 2.095, Acc: 43.333, Correct 8930.0 / Total 20608.0
+[Epoch:    6], Loss: 2.091, Acc: 43.268, Correct 11132.0 / Total 25728.0
+[Epoch:    6], Loss: 2.083, Acc: 43.345, Correct 13371.0 / Total 30848.0
+[Epoch:    6], Loss: 2.078, Acc: 43.547, Correct 15663.0 / Total 35968.0
+[Epoch:    6], Loss: 2.078, Acc: 43.536, Correct 17888.0 / Total 41088.0
+[Epoch:    6], Loss: 2.069, Acc: 43.726, Correct 20205.0 / Total 46208.0
+[Epoch:    6], Acc: 40.190
+Best Model Saving...
+Current Learning Rate: [0.06548539886902863]
+[Epoch:    7], Loss: 1.880, Acc: 48.361, Correct 2538.0 / Total 5248.0
+[Epoch:    7], Loss: 1.893, Acc: 47.975, Correct 4974.0 / Total 10368.0
+[Epoch:    7], Loss: 1.884, Acc: 47.979, Correct 7431.0 / Total 15488.0
+[Epoch:    7], Loss: 1.896, Acc: 47.549, Correct 9799.0 / Total 20608.0
+[Epoch:    7], Loss: 1.904, Acc: 47.357, Correct 12184.0 / Total 25728.0
+[Epoch:    7], Loss: 1.903, Acc: 47.293, Correct 14589.0 / Total 30848.0
+[Epoch:    7], Loss: 1.902, Acc: 47.300, Correct 17013.0 / Total 35968.0
+[Epoch:    7], Loss: 1.899, Acc: 47.396, Correct 19474.0 / Total 41088.0
+[Epoch:    7], Loss: 1.903, Acc: 47.353, Correct 21881.0 / Total 46208.0
+[Epoch:    7], Acc: 44.630
+Best Model Saving...
+Current Learning Rate: [0.0552711967402193]
+[Epoch:    8], Loss: 1.757, Acc: 51.315, Correct 2693.0 / Total 5248.0
+[Epoch:    8], Loss: 1.755, Acc: 51.051, Correct 5293.0 / Total 10368.0
+[Epoch:    8], Loss: 1.748, Acc: 51.104, Correct 7915.0 / Total 15488.0
+[Epoch:    8], Loss: 1.751, Acc: 50.937, Correct 10497.0 / Total 20608.0
+[Epoch:    8], Loss: 1.749, Acc: 51.127, Correct 13154.0 / Total 25728.0
+[Epoch:    8], Loss: 1.749, Acc: 51.102, Correct 15764.0 / Total 30848.0
+[Epoch:    8], Loss: 1.750, Acc: 51.068, Correct 18368.0 / Total 35968.0
+[Epoch:    8], Loss: 1.748, Acc: 51.197, Correct 21036.0 / Total 41088.0
+[Epoch:    8], Loss: 1.744, Acc: 51.324, Correct 23716.0 / Total 46208.0
+[Epoch:    8], Acc: 45.800
+Best Model Saving...
+Current Learning Rate: [0.04482880325978072]
+[Epoch:    9], Loss: 1.588, Acc: 55.107, Correct 2892.0 / Total 5248.0
+[Epoch:    9], Loss: 1.578, Acc: 55.392, Correct 5743.0 / Total 10368.0
+[Epoch:    9], Loss: 1.575, Acc: 55.637, Correct 8617.0 / Total 15488.0
+[Epoch:    9], Loss: 1.583, Acc: 55.377, Correct 11412.0 / Total 20608.0
+[Epoch:    9], Loss: 1.578, Acc: 55.480, Correct 14274.0 / Total 25728.0
+[Epoch:    9], Loss: 1.580, Acc: 55.572, Correct 17143.0 / Total 30848.0
+[Epoch:    9], Loss: 1.583, Acc: 55.413, Correct 19931.0 / Total 35968.0
+[Epoch:    9], Loss: 1.583, Acc: 55.388, Correct 22758.0 / Total 41088.0
+[Epoch:    9], Loss: 1.580, Acc: 55.423, Correct 25610.0 / Total 46208.0
+[Epoch:    9], Acc: 48.900
+Best Model Saving...
+Current Learning Rate: [0.03461460113097138]
+[Epoch:   10], Loss: 1.452, Acc: 59.127, Correct 3103.0 / Total 5248.0
+[Epoch:   10], Loss: 1.431, Acc: 59.616, Correct 6181.0 / Total 10368.0
+[Epoch:   10], Loss: 1.442, Acc: 59.336, Correct 9190.0 / Total 15488.0
+[Epoch:   10], Loss: 1.436, Acc: 59.681, Correct 12299.0 / Total 20608.0
+[Epoch:   10], Loss: 1.432, Acc: 59.791, Correct 15383.0 / Total 25728.0
+[Epoch:   10], Loss: 1.427, Acc: 59.839, Correct 18459.0 / Total 30848.0
+[Epoch:   10], Loss: 1.425, Acc: 59.889, Correct 21541.0 / Total 35968.0
+[Epoch:   10], Loss: 1.426, Acc: 59.784, Correct 24564.0 / Total 41088.0
+[Epoch:   10], Loss: 1.423, Acc: 59.832, Correct 27647.0 / Total 46208.0
+[Epoch:   10], Acc: 54.020
+Best Model Saving...
+Current Learning Rate: [0.02507500000000001]
+[Epoch:   11], Loss: 1.276, Acc: 64.043, Correct 3361.0 / Total 5248.0
+[Epoch:   11], Loss: 1.244, Acc: 64.689, Correct 6707.0 / Total 10368.0
+[Epoch:   11], Loss: 1.258, Acc: 64.062, Correct 9922.0 / Total 15488.0
+[Epoch:   11], Loss: 1.258, Acc: 64.077, Correct 13205.0 / Total 20608.0
+[Epoch:   11], Loss: 1.256, Acc: 63.969, Correct 16458.0 / Total 25728.0
+[Epoch:   11], Loss: 1.257, Acc: 63.991, Correct 19740.0 / Total 30848.0
+[Epoch:   11], Loss: 1.250, Acc: 64.160, Correct 23077.0 / Total 35968.0
+[Epoch:   11], Loss: 1.253, Acc: 64.172, Correct 26367.0 / Total 41088.0
+[Epoch:   11], Loss: 1.250, Acc: 64.238, Correct 29683.0 / Total 46208.0
+[Epoch:   11], Acc: 59.300
+Best Model Saving...
+Current Learning Rate: [0.01662692621237505]
+[Epoch:   12], Loss: 1.090, Acc: 67.950, Correct 3566.0 / Total 5248.0
+[Epoch:   12], Loss: 1.101, Acc: 68.036, Correct 7054.0 / Total 10368.0
+[Epoch:   12], Loss: 1.089, Acc: 68.492, Correct 10608.0 / Total 15488.0
+[Epoch:   12], Loss: 1.086, Acc: 68.740, Correct 14166.0 / Total 20608.0
+[Epoch:   12], Loss: 1.085, Acc: 68.703, Correct 17676.0 / Total 25728.0
+[Epoch:   12], Loss: 1.084, Acc: 68.750, Correct 21208.0 / Total 30848.0
+[Epoch:   12], Loss: 1.076, Acc: 69.056, Correct 24838.0 / Total 35968.0
+[Epoch:   12], Loss: 1.079, Acc: 68.933, Correct 28323.0 / Total 41088.0
+[Epoch:   12], Loss: 1.077, Acc: 68.940, Correct 31856.0 / Total 46208.0
+[Epoch:   12], Acc: 63.160
+Best Model Saving...
+Current Learning Rate: [0.00963960113097138]
+[Epoch:   13], Loss: 0.949, Acc: 72.961, Correct 3829.0 / Total 5248.0
+[Epoch:   13], Loss: 0.933, Acc: 73.524, Correct 7623.0 / Total 10368.0
+[Epoch:   13], Loss: 0.916, Acc: 73.812, Correct 11432.0 / Total 15488.0
+[Epoch:   13], Loss: 0.921, Acc: 73.554, Correct 15158.0 / Total 20608.0
+[Epoch:   13], Loss: 0.911, Acc: 73.838, Correct 18997.0 / Total 25728.0
+[Epoch:   13], Loss: 0.912, Acc: 73.752, Correct 22751.0 / Total 30848.0
+[Epoch:   13], Loss: 0.910, Acc: 73.827, Correct 26554.0 / Total 35968.0
+[Epoch:   13], Loss: 0.910, Acc: 73.759, Correct 30306.0 / Total 41088.0
+[Epoch:   13], Loss: 0.911, Acc: 73.758, Correct 34082.0 / Total 46208.0
+[Epoch:   13], Acc: 66.380
+Best Model Saving...
+Current Learning Rate: [0.004418404390752082]
+[Epoch:   14], Loss: 0.783, Acc: 77.725, Correct 4079.0 / Total 5248.0
+[Epoch:   14], Loss: 0.771, Acc: 78.019, Correct 8089.0 / Total 10368.0
+[Epoch:   14], Loss: 0.769, Acc: 78.048, Correct 12088.0 / Total 15488.0
+[Epoch:   14], Loss: 0.769, Acc: 77.950, Correct 16064.0 / Total 20608.0
+[Epoch:   14], Loss: 0.766, Acc: 78.102, Correct 20094.0 / Total 25728.0
+[Epoch:   14], Loss: 0.765, Acc: 78.115, Correct 24097.0 / Total 30848.0
+[Epoch:   14], Loss: 0.768, Acc: 77.992, Correct 28052.0 / Total 35968.0
+[Epoch:   14], Loss: 0.766, Acc: 77.984, Correct 32042.0 / Total 41088.0
+[Epoch:   14], Loss: 0.765, Acc: 77.963, Correct 36025.0 / Total 46208.0
+[Epoch:   14], Acc: 68.710
+Best Model Saving...
+Current Learning Rate: [0.001191527343346406]
+[Epoch:   15], Loss: 0.699, Acc: 80.488, Correct 4224.0 / Total 5248.0
+[Epoch:   15], Loss: 0.694, Acc: 80.536, Correct 8350.0 / Total 10368.0
+[Epoch:   15], Loss: 0.688, Acc: 80.733, Correct 12504.0 / Total 15488.0
+[Epoch:   15], Loss: 0.681, Acc: 80.823, Correct 16656.0 / Total 20608.0
+[Epoch:   15], Loss: 0.680, Acc: 80.842, Correct 20799.0 / Total 25728.0
+[Epoch:   15], Loss: 0.679, Acc: 80.919, Correct 24962.0 / Total 30848.0
+[Epoch:   15], Loss: 0.676, Acc: 80.983, Correct 29128.0 / Total 35968.0
+[Epoch:   15], Loss: 0.672, Acc: 81.087, Correct 33317.0 / Total 41088.0
+[Epoch:   15], Loss: 0.675, Acc: 80.917, Correct 37390.0 / Total 46208.0
+[Epoch:   15], Acc: 69.930
+Best Model Saving...
+Current Learning Rate: [0.1]
+[Epoch:   16], Loss: 1.801, Acc: 50.210, Correct 2635.0 / Total 5248.0
+[Epoch:   16], Loss: 1.970, Acc: 46.345, Correct 4805.0 / Total 10368.0
+[Epoch:   16], Loss: 2.009, Acc: 45.532, Correct 7052.0 / Total 15488.0
+[Epoch:   16], Loss: 2.039, Acc: 44.958, Correct 9265.0 / Total 20608.0
+[Epoch:   16], Loss: 2.050, Acc: 44.613, Correct 11478.0 / Total 25728.0
+[Epoch:   16], Loss: 2.058, Acc: 44.389, Correct 13693.0 / Total 30848.0
+[Epoch:   16], Loss: 2.059, Acc: 44.342, Correct 15949.0 / Total 35968.0
+[Epoch:   16], Loss: 2.061, Acc: 44.305, Correct 18204.0 / Total 41088.0
+[Epoch:   16], Loss: 2.062, Acc: 44.233, Correct 20439.0 / Total 46208.0
+[Epoch:   16], Acc: 37.990
+Current Learning Rate: [0.09972636867364526]
+[Epoch:   17], Loss: 1.964, Acc: 46.875, Correct 2460.0 / Total 5248.0
+[Epoch:   17], Loss: 1.944, Acc: 47.155, Correct 4889.0 / Total 10368.0
+[Epoch:   17], Loss: 1.952, Acc: 46.759, Correct 7242.0 / Total 15488.0
+[Epoch:   17], Loss: 1.950, Acc: 46.909, Correct 9667.0 / Total 20608.0
+[Epoch:   17], Loss: 1.956, Acc: 46.797, Correct 12040.0 / Total 25728.0
+[Epoch:   17], Loss: 1.956, Acc: 46.862, Correct 14456.0 / Total 30848.0
+[Epoch:   17], Loss: 1.960, Acc: 46.755, Correct 16817.0 / Total 35968.0
+[Epoch:   17], Loss: 1.954, Acc: 46.880, Correct 19262.0 / Total 41088.0
+[Epoch:   17], Loss: 1.953, Acc: 46.849, Correct 21648.0 / Total 46208.0
+[Epoch:   17], Acc: 38.220
+Current Learning Rate: [0.0989084726566536]
+[Epoch:   18], Loss: 1.848, Acc: 49.771, Correct 2612.0 / Total 5248.0
+[Epoch:   18], Loss: 1.842, Acc: 49.846, Correct 5168.0 / Total 10368.0
+[Epoch:   18], Loss: 1.835, Acc: 49.819, Correct 7716.0 / Total 15488.0
+[Epoch:   18], Loss: 1.844, Acc: 49.709, Correct 10244.0 / Total 20608.0
+[Epoch:   18], Loss: 1.841, Acc: 49.880, Correct 12833.0 / Total 25728.0
+[Epoch:   18], Loss: 1.842, Acc: 49.721, Correct 15338.0 / Total 30848.0
+[Epoch:   18], Loss: 1.841, Acc: 49.703, Correct 17877.0 / Total 35968.0
+[Epoch:   18], Loss: 1.843, Acc: 49.594, Correct 20377.0 / Total 41088.0
+[Epoch:   18], Loss: 1.842, Acc: 49.604, Correct 22921.0 / Total 46208.0
+[Epoch:   18], Acc: 43.420
+Current Learning Rate: [0.09755527298894293]
+[Epoch:   19], Loss: 1.792, Acc: 50.400, Correct 2645.0 / Total 5248.0
+[Epoch:   19], Loss: 1.786, Acc: 50.598, Correct 5246.0 / Total 10368.0
+[Epoch:   19], Loss: 1.777, Acc: 50.820, Correct 7871.0 / Total 15488.0
+[Epoch:   19], Loss: 1.778, Acc: 50.873, Correct 10484.0 / Total 20608.0
+[Epoch:   19], Loss: 1.780, Acc: 50.828, Correct 13077.0 / Total 25728.0
+[Epoch:   19], Loss: 1.785, Acc: 50.827, Correct 15679.0 / Total 30848.0
+[Epoch:   19], Loss: 1.789, Acc: 50.854, Correct 18291.0 / Total 35968.0
+[Epoch:   19], Loss: 1.786, Acc: 50.905, Correct 20916.0 / Total 41088.0
+[Epoch:   19], Loss: 1.788, Acc: 50.883, Correct 23512.0 / Total 46208.0
+[Epoch:   19], Acc: 23.670
+Current Learning Rate: [0.09568159560924791]
+[Epoch:   20], Loss: 1.747, Acc: 51.772, Correct 2717.0 / Total 5248.0
+[Epoch:   20], Loss: 1.749, Acc: 51.977, Correct 5389.0 / Total 10368.0
+[Epoch:   20], Loss: 1.742, Acc: 51.905, Correct 8039.0 / Total 15488.0
+[Epoch:   20], Loss: 1.735, Acc: 52.101, Correct 10737.0 / Total 20608.0
+[Epoch:   20], Loss: 1.737, Acc: 51.982, Correct 13374.0 / Total 25728.0
+[Epoch:   20], Loss: 1.735, Acc: 51.990, Correct 16038.0 / Total 30848.0
+[Epoch:   20], Loss: 1.736, Acc: 51.918, Correct 18674.0 / Total 35968.0
+[Epoch:   20], Loss: 1.735, Acc: 51.932, Correct 21338.0 / Total 41088.0
+[Epoch:   20], Loss: 1.734, Acc: 52.023, Correct 24039.0 / Total 46208.0
+[Epoch:   20], Acc: 37.460
+Current Learning Rate: [0.09330796891903273]
+[Epoch:   21], Loss: 1.629, Acc: 53.716, Correct 2819.0 / Total 5248.0
+[Epoch:   21], Loss: 1.646, Acc: 53.704, Correct 5568.0 / Total 10368.0
+[Epoch:   21], Loss: 1.652, Acc: 53.609, Correct 8303.0 / Total 15488.0
+[Epoch:   21], Loss: 1.665, Acc: 53.484, Correct 11022.0 / Total 20608.0
+[Epoch:   21], Loss: 1.673, Acc: 53.265, Correct 13704.0 / Total 25728.0
+[Epoch:   21], Loss: 1.677, Acc: 53.277, Correct 16435.0 / Total 30848.0
+[Epoch:   21], Loss: 1.681, Acc: 53.308, Correct 19174.0 / Total 35968.0
+[Epoch:   21], Loss: 1.682, Acc: 53.249, Correct 21879.0 / Total 41088.0
+[Epoch:   21], Loss: 1.684, Acc: 53.231, Correct 24597.0 / Total 46208.0
+[Epoch:   21], Acc: 41.260
+Current Learning Rate: [0.09046039886902862]
+[Epoch:   22], Loss: 1.597, Acc: 55.297, Correct 2902.0 / Total 5248.0
+[Epoch:   22], Loss: 1.599, Acc: 55.314, Correct 5735.0 / Total 10368.0
+[Epoch:   22], Loss: 1.614, Acc: 55.288, Correct 8563.0 / Total 15488.0
+[Epoch:   22], Loss: 1.624, Acc: 55.051, Correct 11345.0 / Total 20608.0
+[Epoch:   22], Loss: 1.629, Acc: 54.936, Correct 14134.0 / Total 25728.0
+[Epoch:   22], Loss: 1.633, Acc: 54.791, Correct 16902.0 / Total 30848.0
+[Epoch:   22], Loss: 1.636, Acc: 54.662, Correct 19661.0 / Total 35968.0
+[Epoch:   22], Loss: 1.644, Acc: 54.512, Correct 22398.0 / Total 41088.0
+[Epoch:   22], Loss: 1.650, Acc: 54.302, Correct 25092.0 / Total 46208.0
+[Epoch:   22], Acc: 43.520
+Current Learning Rate: [0.08717008403259585]
+[Epoch:   23], Loss: 1.578, Acc: 55.393, Correct 2907.0 / Total 5248.0
+[Epoch:   23], Loss: 1.587, Acc: 55.237, Correct 5727.0 / Total 10368.0
+[Epoch:   23], Loss: 1.582, Acc: 55.540, Correct 8602.0 / Total 15488.0
+[Epoch:   23], Loss: 1.583, Acc: 55.483, Correct 11434.0 / Total 20608.0
+[Epoch:   23], Loss: 1.589, Acc: 55.410, Correct 14256.0 / Total 25728.0
+[Epoch:   23], Loss: 1.598, Acc: 55.128, Correct 17006.0 / Total 30848.0
+[Epoch:   23], Loss: 1.601, Acc: 55.054, Correct 19802.0 / Total 35968.0
+[Epoch:   23], Loss: 1.602, Acc: 55.053, Correct 22620.0 / Total 41088.0
+[Epoch:   23], Loss: 1.600, Acc: 55.190, Correct 25502.0 / Total 46208.0
+[Epoch:   23], Acc: 47.770
+Current Learning Rate: [0.08347307378762497]
+[Epoch:   24], Loss: 1.497, Acc: 57.184, Correct 3001.0 / Total 5248.0
+[Epoch:   24], Loss: 1.529, Acc: 56.375, Correct 5845.0 / Total 10368.0
+[Epoch:   24], Loss: 1.528, Acc: 56.721, Correct 8785.0 / Total 15488.0
+[Epoch:   24], Loss: 1.538, Acc: 56.609, Correct 11666.0 / Total 20608.0
+[Epoch:   24], Loss: 1.547, Acc: 56.417, Correct 14515.0 / Total 25728.0
+[Epoch:   24], Loss: 1.548, Acc: 56.380, Correct 17392.0 / Total 30848.0
+[Epoch:   24], Loss: 1.551, Acc: 56.314, Correct 20255.0 / Total 35968.0
+[Epoch:   24], Loss: 1.557, Acc: 56.223, Correct 23101.0 / Total 41088.0
+[Epoch:   24], Loss: 1.559, Acc: 56.189, Correct 25964.0 / Total 46208.0
+[Epoch:   24], Acc: 44.860
+Current Learning Rate: [0.07940987335200904]
+[Epoch:   25], Loss: 1.464, Acc: 58.022, Correct 3045.0 / Total 5248.0
+[Epoch:   25], Loss: 1.489, Acc: 57.841, Correct 5997.0 / Total 10368.0
+[Epoch:   25], Loss: 1.491, Acc: 58.071, Correct 8994.0 / Total 15488.0
+[Epoch:   25], Loss: 1.506, Acc: 57.851, Correct 11922.0 / Total 20608.0
+[Epoch:   25], Loss: 1.509, Acc: 57.727, Correct 14852.0 / Total 25728.0
+[Epoch:   25], Loss: 1.506, Acc: 57.631, Correct 17778.0 / Total 30848.0
+[Epoch:   25], Loss: 1.507, Acc: 57.623, Correct 20726.0 / Total 35968.0
+[Epoch:   25], Loss: 1.510, Acc: 57.623, Correct 23676.0 / Total 41088.0
+[Epoch:   25], Loss: 1.511, Acc: 57.529, Correct 26583.0 / Total 46208.0
+[Epoch:   25], Acc: 46.010
+Current Learning Rate: [0.07502500000000001]
+[Epoch:   26], Loss: 1.423, Acc: 59.642, Correct 3130.0 / Total 5248.0
+[Epoch:   26], Loss: 1.436, Acc: 59.597, Correct 6179.0 / Total 10368.0
+[Epoch:   26], Loss: 1.459, Acc: 59.001, Correct 9138.0 / Total 15488.0
+[Epoch:   26], Loss: 1.466, Acc: 59.016, Correct 12162.0 / Total 20608.0
+[Epoch:   26], Loss: 1.461, Acc: 59.126, Correct 15212.0 / Total 25728.0
+[Epoch:   26], Loss: 1.459, Acc: 59.304, Correct 18294.0 / Total 30848.0
+[Epoch:   26], Loss: 1.466, Acc: 59.061, Correct 21243.0 / Total 35968.0
+[Epoch:   26], Loss: 1.469, Acc: 58.949, Correct 24221.0 / Total 41088.0
+[Epoch:   26], Loss: 1.471, Acc: 58.776, Correct 27159.0 / Total 46208.0
+[Epoch:   26], Acc: 44.370
+Current Learning Rate: [0.07036649532163623]
+[Epoch:   27], Loss: 1.356, Acc: 60.918, Correct 3197.0 / Total 5248.0
+[Epoch:   27], Loss: 1.395, Acc: 60.291, Correct 6251.0 / Total 10368.0
+[Epoch:   27], Loss: 1.397, Acc: 60.234, Correct 9329.0 / Total 15488.0
+[Epoch:   27], Loss: 1.398, Acc: 60.447, Correct 12457.0 / Total 20608.0
+[Epoch:   27], Loss: 1.413, Acc: 60.012, Correct 15440.0 / Total 25728.0
+[Epoch:   27], Loss: 1.417, Acc: 60.010, Correct 18512.0 / Total 30848.0
+[Epoch:   27], Loss: 1.423, Acc: 59.987, Correct 21576.0 / Total 35968.0
+[Epoch:   27], Loss: 1.421, Acc: 60.039, Correct 24669.0 / Total 41088.0
+[Epoch:   27], Loss: 1.425, Acc: 59.868, Correct 27664.0 / Total 46208.0
+[Epoch:   27], Acc: 50.960
+Current Learning Rate: [0.06548539886902863]
+[Epoch:   28], Loss: 1.362, Acc: 61.395, Correct 3222.0 / Total 5248.0
+[Epoch:   28], Loss: 1.357, Acc: 61.834, Correct 6411.0 / Total 10368.0
+[Epoch:   28], Loss: 1.359, Acc: 61.674, Correct 9552.0 / Total 15488.0
+[Epoch:   28], Loss: 1.362, Acc: 61.607, Correct 12696.0 / Total 20608.0
+[Epoch:   28], Loss: 1.362, Acc: 61.571, Correct 15841.0 / Total 25728.0
+[Epoch:   28], Loss: 1.360, Acc: 61.609, Correct 19005.0 / Total 30848.0
+[Epoch:   28], Loss: 1.366, Acc: 61.477, Correct 22112.0 / Total 35968.0
+[Epoch:   28], Loss: 1.372, Acc: 61.312, Correct 25192.0 / Total 41088.0
+[Epoch:   28], Loss: 1.377, Acc: 61.219, Correct 28288.0 / Total 46208.0
+[Epoch:   28], Acc: 51.890
+Current Learning Rate: [0.06043518895634708]
+[Epoch:   29], Loss: 1.265, Acc: 64.787, Correct 3400.0 / Total 5248.0
+[Epoch:   29], Loss: 1.273, Acc: 64.111, Correct 6647.0 / Total 10368.0
+[Epoch:   29], Loss: 1.291, Acc: 63.617, Correct 9853.0 / Total 15488.0
+[Epoch:   29], Loss: 1.298, Acc: 63.412, Correct 13068.0 / Total 20608.0
+[Epoch:   29], Loss: 1.310, Acc: 63.060, Correct 16224.0 / Total 25728.0
+[Epoch:   29], Loss: 1.310, Acc: 62.970, Correct 19425.0 / Total 30848.0
+[Epoch:   29], Loss: 1.322, Acc: 62.711, Correct 22556.0 / Total 35968.0
+[Epoch:   29], Loss: 1.324, Acc: 62.656, Correct 25744.0 / Total 41088.0
+[Epoch:   29], Loss: 1.325, Acc: 62.632, Correct 28941.0 / Total 46208.0
+[Epoch:   29], Acc: 51.110
+Current Learning Rate: [0.0552711967402193]
+[Epoch:   30], Loss: 1.204, Acc: 65.701, Correct 3448.0 / Total 5248.0
+[Epoch:   30], Loss: 1.215, Acc: 65.596, Correct 6801.0 / Total 10368.0
+[Epoch:   30], Loss: 1.230, Acc: 65.031, Correct 10072.0 / Total 15488.0
+[Epoch:   30], Loss: 1.234, Acc: 64.849, Correct 13364.0 / Total 20608.0
+[Epoch:   30], Loss: 1.237, Acc: 64.914, Correct 16701.0 / Total 25728.0
+[Epoch:   30], Loss: 1.238, Acc: 64.889, Correct 20017.0 / Total 30848.0
+[Epoch:   30], Loss: 1.247, Acc: 64.699, Correct 23271.0 / Total 35968.0
+[Epoch:   30], Loss: 1.255, Acc: 64.464, Correct 26487.0 / Total 41088.0
+[Epoch:   30], Loss: 1.261, Acc: 64.305, Correct 29714.0 / Total 46208.0
+[Epoch:   30], Acc: 54.470
+Current Learning Rate: [0.05005000000000002]
+[Epoch:   31], Loss: 1.142, Acc: 67.340, Correct 3534.0 / Total 5248.0
+[Epoch:   31], Loss: 1.142, Acc: 67.149, Correct 6962.0 / Total 10368.0
+[Epoch:   31], Loss: 1.152, Acc: 66.845, Correct 10353.0 / Total 15488.0
+[Epoch:   31], Loss: 1.155, Acc: 66.785, Correct 13763.0 / Total 20608.0
+[Epoch:   31], Loss: 1.160, Acc: 66.581, Correct 17130.0 / Total 25728.0
+[Epoch:   31], Loss: 1.172, Acc: 66.341, Correct 20465.0 / Total 30848.0
+[Epoch:   31], Loss: 1.179, Acc: 66.251, Correct 23829.0 / Total 35968.0
+[Epoch:   31], Loss: 1.184, Acc: 66.107, Correct 27162.0 / Total 41088.0
+[Epoch:   31], Loss: 1.190, Acc: 65.893, Correct 30448.0 / Total 46208.0
+[Epoch:   31], Acc: 55.150
+Current Learning Rate: [0.04482880325978072]
+[Epoch:   32], Loss: 1.111, Acc: 67.778, Correct 3557.0 / Total 5248.0
+[Epoch:   32], Loss: 1.112, Acc: 68.355, Correct 7087.0 / Total 10368.0
+[Epoch:   32], Loss: 1.102, Acc: 68.556, Correct 10618.0 / Total 15488.0
+[Epoch:   32], Loss: 1.107, Acc: 68.367, Correct 14089.0 / Total 20608.0
+[Epoch:   32], Loss: 1.105, Acc: 68.350, Correct 17585.0 / Total 25728.0
+[Epoch:   32], Loss: 1.109, Acc: 68.147, Correct 21022.0 / Total 30848.0
+[Epoch:   32], Loss: 1.115, Acc: 67.949, Correct 24440.0 / Total 35968.0
+[Epoch:   32], Loss: 1.119, Acc: 67.823, Correct 27867.0 / Total 41088.0
+[Epoch:   32], Loss: 1.122, Acc: 67.683, Correct 31275.0 / Total 46208.0
+[Epoch:   32], Acc: 59.390
+Current Learning Rate: [0.03966481104365292]
+[Epoch:   33], Loss: 1.052, Acc: 70.236, Correct 3686.0 / Total 5248.0
+[Epoch:   33], Loss: 1.029, Acc: 70.669, Correct 7327.0 / Total 10368.0
+[Epoch:   33], Loss: 1.033, Acc: 70.564, Correct 10929.0 / Total 15488.0
+[Epoch:   33], Loss: 1.036, Acc: 70.516, Correct 14532.0 / Total 20608.0
+[Epoch:   33], Loss: 1.038, Acc: 70.371, Correct 18105.0 / Total 25728.0
+[Epoch:   33], Loss: 1.043, Acc: 70.124, Correct 21632.0 / Total 30848.0
+[Epoch:   33], Loss: 1.043, Acc: 70.021, Correct 25185.0 / Total 35968.0
+[Epoch:   33], Loss: 1.047, Acc: 69.860, Correct 28704.0 / Total 41088.0
+[Epoch:   33], Loss: 1.049, Acc: 69.810, Correct 32258.0 / Total 46208.0
+[Epoch:   33], Acc: 60.280
+Current Learning Rate: [0.03461460113097138]
+[Epoch:   34], Loss: 0.925, Acc: 73.590, Correct 3862.0 / Total 5248.0
+[Epoch:   34], Loss: 0.925, Acc: 73.495, Correct 7620.0 / Total 10368.0
+[Epoch:   34], Loss: 0.937, Acc: 73.018, Correct 11309.0 / Total 15488.0
+[Epoch:   34], Loss: 0.939, Acc: 72.967, Correct 15037.0 / Total 20608.0
+[Epoch:   34], Loss: 0.944, Acc: 72.781, Correct 18725.0 / Total 25728.0
+[Epoch:   34], Loss: 0.952, Acc: 72.510, Correct 22368.0 / Total 30848.0
+[Epoch:   34], Loss: 0.959, Acc: 72.437, Correct 26054.0 / Total 35968.0
+[Epoch:   34], Loss: 0.963, Acc: 72.345, Correct 29725.0 / Total 41088.0
+[Epoch:   34], Loss: 0.966, Acc: 72.234, Correct 33378.0 / Total 46208.0
+[Epoch:   34], Acc: 61.530
+Current Learning Rate: [0.02973350467836379]
+[Epoch:   35], Loss: 0.866, Acc: 74.771, Correct 3924.0 / Total 5248.0
+[Epoch:   35], Loss: 0.851, Acc: 75.212, Correct 7798.0 / Total 10368.0
+[Epoch:   35], Loss: 0.859, Acc: 75.065, Correct 11626.0 / Total 15488.0
+[Epoch:   35], Loss: 0.862, Acc: 74.956, Correct 15447.0 / Total 20608.0
+[Epoch:   35], Loss: 0.862, Acc: 74.938, Correct 19280.0 / Total 25728.0
+[Epoch:   35], Loss: 0.868, Acc: 74.653, Correct 23029.0 / Total 30848.0
+[Epoch:   35], Loss: 0.869, Acc: 74.630, Correct 26843.0 / Total 35968.0
+[Epoch:   35], Loss: 0.878, Acc: 74.460, Correct 30594.0 / Total 41088.0
+[Epoch:   35], Loss: 0.885, Acc: 74.271, Correct 34319.0 / Total 46208.0
+[Epoch:   35], Acc: 64.990
+Current Learning Rate: [0.02507500000000001]
+[Epoch:   36], Loss: 0.772, Acc: 77.820, Correct 4084.0 / Total 5248.0
+[Epoch:   36], Loss: 0.771, Acc: 78.048, Correct 8092.0 / Total 10368.0
+[Epoch:   36], Loss: 0.767, Acc: 78.099, Correct 12096.0 / Total 15488.0
+[Epoch:   36], Loss: 0.774, Acc: 77.819, Correct 16037.0 / Total 20608.0
+[Epoch:   36], Loss: 0.774, Acc: 77.830, Correct 20024.0 / Total 25728.0
+[Epoch:   36], Loss: 0.778, Acc: 77.632, Correct 23948.0 / Total 30848.0
+[Epoch:   36], Loss: 0.785, Acc: 77.463, Correct 27862.0 / Total 35968.0
+[Epoch:   36], Loss: 0.787, Acc: 77.317, Correct 31768.0 / Total 41088.0
+[Epoch:   36], Loss: 0.791, Acc: 77.149, Correct 35649.0 / Total 46208.0
+[Epoch:   36], Acc: 64.570
+Current Learning Rate: [0.020690126647990973]
+[Epoch:   37], Loss: 0.694, Acc: 80.755, Correct 4238.0 / Total 5248.0
+[Epoch:   37], Loss: 0.677, Acc: 81.125, Correct 8411.0 / Total 10368.0
+[Epoch:   37], Loss: 0.680, Acc: 80.830, Correct 12519.0 / Total 15488.0
+[Epoch:   37], Loss: 0.680, Acc: 80.624, Correct 16615.0 / Total 20608.0
+[Epoch:   37], Loss: 0.684, Acc: 80.457, Correct 20700.0 / Total 25728.0
+[Epoch:   37], Loss: 0.683, Acc: 80.365, Correct 24791.0 / Total 30848.0
+[Epoch:   37], Loss: 0.689, Acc: 80.257, Correct 28867.0 / Total 35968.0
+[Epoch:   37], Loss: 0.689, Acc: 80.221, Correct 32961.0 / Total 41088.0
+[Epoch:   37], Loss: 0.693, Acc: 80.114, Correct 37019.0 / Total 46208.0
+[Epoch:   37], Acc: 68.800
+Current Learning Rate: [0.01662692621237505]
+[Epoch:   38], Loss: 0.562, Acc: 83.708, Correct 4393.0 / Total 5248.0
+[Epoch:   38], Loss: 0.553, Acc: 84.230, Correct 8733.0 / Total 10368.0
+[Epoch:   38], Loss: 0.562, Acc: 83.936, Correct 13000.0 / Total 15488.0
+[Epoch:   38], Loss: 0.571, Acc: 83.754, Correct 17260.0 / Total 20608.0
+[Epoch:   38], Loss: 0.577, Acc: 83.504, Correct 21484.0 / Total 25728.0
+[Epoch:   38], Loss: 0.582, Acc: 83.367, Correct 25717.0 / Total 30848.0
+[Epoch:   38], Loss: 0.584, Acc: 83.288, Correct 29957.0 / Total 35968.0
+[Epoch:   38], Loss: 0.585, Acc: 83.197, Correct 34184.0 / Total 41088.0
+[Epoch:   38], Loss: 0.587, Acc: 83.211, Correct 38450.0 / Total 46208.0
+[Epoch:   38], Acc: 69.980
+Best Model Saving...
+Current Learning Rate: [0.012929915967404169]
+[Epoch:   39], Loss: 0.484, Acc: 86.738, Correct 4552.0 / Total 5248.0
+[Epoch:   39], Loss: 0.473, Acc: 87.047, Correct 9025.0 / Total 10368.0
+[Epoch:   39], Loss: 0.469, Acc: 87.003, Correct 13475.0 / Total 15488.0
+[Epoch:   39], Loss: 0.470, Acc: 86.840, Correct 17896.0 / Total 20608.0
+[Epoch:   39], Loss: 0.476, Acc: 86.645, Correct 22292.0 / Total 25728.0
+[Epoch:   39], Loss: 0.479, Acc: 86.618, Correct 26720.0 / Total 30848.0
+[Epoch:   39], Loss: 0.483, Acc: 86.402, Correct 31077.0 / Total 35968.0
+[Epoch:   39], Loss: 0.485, Acc: 86.334, Correct 35473.0 / Total 41088.0
+[Epoch:   39], Loss: 0.488, Acc: 86.225, Correct 39843.0 / Total 46208.0
+[Epoch:   39], Acc: 72.260
+Best Model Saving...
+Current Learning Rate: [0.00963960113097138]
+[Epoch:   40], Loss: 0.386, Acc: 89.901, Correct 4718.0 / Total 5248.0
+[Epoch:   40], Loss: 0.394, Acc: 89.564, Correct 9286.0 / Total 10368.0
+[Epoch:   40], Loss: 0.389, Acc: 89.650, Correct 13885.0 / Total 15488.0
+[Epoch:   40], Loss: 0.390, Acc: 89.587, Correct 18462.0 / Total 20608.0
+[Epoch:   40], Loss: 0.393, Acc: 89.467, Correct 23018.0 / Total 25728.0
+[Epoch:   40], Loss: 0.394, Acc: 89.312, Correct 27551.0 / Total 30848.0
+[Epoch:   40], Loss: 0.395, Acc: 89.249, Correct 32101.0 / Total 35968.0
+[Epoch:   40], Loss: 0.397, Acc: 89.150, Correct 36630.0 / Total 41088.0
+[Epoch:   40], Loss: 0.399, Acc: 89.088, Correct 41166.0 / Total 46208.0
+[Epoch:   40], Acc: 73.160
+Best Model Saving...
+Current Learning Rate: [0.006792031080967287]
+[Epoch:   41], Loss: 0.305, Acc: 92.073, Correct 4832.0 / Total 5248.0
+[Epoch:   41], Loss: 0.299, Acc: 92.429, Correct 9583.0 / Total 10368.0
+[Epoch:   41], Loss: 0.302, Acc: 92.284, Correct 14293.0 / Total 15488.0
+[Epoch:   41], Loss: 0.306, Acc: 92.090, Correct 18978.0 / Total 20608.0
+[Epoch:   41], Loss: 0.305, Acc: 92.110, Correct 23698.0 / Total 25728.0
+[Epoch:   41], Loss: 0.306, Acc: 92.100, Correct 28411.0 / Total 30848.0
+[Epoch:   41], Loss: 0.307, Acc: 92.010, Correct 33094.0 / Total 35968.0
+[Epoch:   41], Loss: 0.310, Acc: 91.842, Correct 37736.0 / Total 41088.0
+[Epoch:   41], Loss: 0.310, Acc: 91.869, Correct 42451.0 / Total 46208.0
+[Epoch:   41], Acc: 75.480
+Best Model Saving...
+Current Learning Rate: [0.004418404390752082]
+[Epoch:   42], Loss: 0.235, Acc: 94.607, Correct 4965.0 / Total 5248.0
+[Epoch:   42], Loss: 0.238, Acc: 94.396, Correct 9787.0 / Total 10368.0
+[Epoch:   42], Loss: 0.237, Acc: 94.383, Correct 14618.0 / Total 15488.0
+[Epoch:   42], Loss: 0.238, Acc: 94.313, Correct 19436.0 / Total 20608.0
+[Epoch:   42], Loss: 0.241, Acc: 94.170, Correct 24228.0 / Total 25728.0
+[Epoch:   42], Loss: 0.241, Acc: 94.201, Correct 29059.0 / Total 30848.0
+[Epoch:   42], Loss: 0.240, Acc: 94.148, Correct 33863.0 / Total 35968.0
+[Epoch:   42], Loss: 0.239, Acc: 94.217, Correct 38712.0 / Total 41088.0
+[Epoch:   42], Loss: 0.239, Acc: 94.213, Correct 43534.0 / Total 46208.0
+[Epoch:   42], Acc: 75.740
+Best Model Saving...
+Current Learning Rate: [0.002544727011057081]
+[Epoch:   43], Loss: 0.201, Acc: 95.579, Correct 5016.0 / Total 5248.0
+[Epoch:   43], Loss: 0.201, Acc: 95.448, Correct 9896.0 / Total 10368.0
+[Epoch:   43], Loss: 0.196, Acc: 95.674, Correct 14818.0 / Total 15488.0
+[Epoch:   43], Loss: 0.193, Acc: 95.880, Correct 19759.0 / Total 20608.0
+[Epoch:   43], Loss: 0.189, Acc: 95.977, Correct 24693.0 / Total 25728.0
+[Epoch:   43], Loss: 0.188, Acc: 95.951, Correct 29599.0 / Total 30848.0
+[Epoch:   43], Loss: 0.187, Acc: 95.960, Correct 34515.0 / Total 35968.0
+[Epoch:   43], Loss: 0.187, Acc: 95.950, Correct 39424.0 / Total 41088.0
+[Epoch:   43], Loss: 0.186, Acc: 95.934, Correct 44329.0 / Total 46208.0
+[Epoch:   43], Acc: 76.820
+Best Model Saving...
+Current Learning Rate: [0.001191527343346406]
+[Epoch:   44], Loss: 0.152, Acc: 97.123, Correct 5097.0 / Total 5248.0
+[Epoch:   44], Loss: 0.150, Acc: 97.135, Correct 10071.0 / Total 10368.0
+[Epoch:   44], Loss: 0.152, Acc: 97.140, Correct 15045.0 / Total 15488.0
+[Epoch:   44], Loss: 0.151, Acc: 97.200, Correct 20031.0 / Total 20608.0
+[Epoch:   44], Loss: 0.151, Acc: 97.174, Correct 25001.0 / Total 25728.0
+[Epoch:   44], Loss: 0.150, Acc: 97.138, Correct 29965.0 / Total 30848.0
+[Epoch:   44], Loss: 0.152, Acc: 97.086, Correct 34920.0 / Total 35968.0
+[Epoch:   44], Loss: 0.151, Acc: 97.092, Correct 39893.0 / Total 41088.0
+[Epoch:   44], Loss: 0.151, Acc: 97.133, Correct 44883.0 / Total 46208.0
+[Epoch:   44], Acc: 77.080
+Best Model Saving...
+Current Learning Rate: [0.0003736313263547436]
+[Epoch:   45], Loss: 0.134, Acc: 97.656, Correct 5125.0 / Total 5248.0
+[Epoch:   45], Loss: 0.131, Acc: 97.762, Correct 10136.0 / Total 10368.0
+[Epoch:   45], Loss: 0.134, Acc: 97.656, Correct 15125.0 / Total 15488.0
+[Epoch:   45], Loss: 0.134, Acc: 97.710, Correct 20136.0 / Total 20608.0
+[Epoch:   45], Loss: 0.134, Acc: 97.637, Correct 25120.0 / Total 25728.0
+[Epoch:   45], Loss: 0.133, Acc: 97.672, Correct 30130.0 / Total 30848.0
+[Epoch:   45], Loss: 0.133, Acc: 97.695, Correct 35139.0 / Total 35968.0
+[Epoch:   45], Loss: 0.133, Acc: 97.647, Correct 40121.0 / Total 41088.0
+[Epoch:   45], Loss: 0.134, Acc: 97.654, Correct 45124.0 / Total 46208.0
+[Epoch:   45], Acc: 77.440
+Best Model Saving...

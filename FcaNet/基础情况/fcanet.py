@@ -65,6 +65,7 @@ class FcaBasicBlock(nn.Module):
         super(FcaBasicBlock, self).__init__()
         # assert fea_h is not None
         # assert fea_w is not None
+		# 应该修改
         c2wh = dict([(64,56), (128,28), (256,14) ,(512,7)])
         self.planes = planes
         self.conv1 = nn.Conv2d(inplanes, planes, kernel_size=3, stride=stride, padding=1, bias=False)

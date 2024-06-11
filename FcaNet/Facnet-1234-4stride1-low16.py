@@ -195,10 +195,10 @@ class ResNet(nn.Module):
         #     self.resolution[0] /= 2
         #     self.resolution[1] /= 2
 
-        self.layer1 = self._make_layer(block, 64, num_blocks[0], stride=1)
+        self.layer1 = self._make_layer(block, 64, num_blocks[0], stride=1,Fca=True)
         self.layer2 = self._make_layer(block, 128, num_blocks[1], stride=2,Fca=True)
         self.layer3 = self._make_layer(block, 256, num_blocks[2], stride=2, Fca=True)
-        self.layer4 = self._make_layer(block, 512, num_blocks[3], stride=1)
+        self.layer4 = self._make_layer(block, 512, num_blocks[3], stride=1, Fca=True)
         # self.cca = CrissCrossAttention(in_dim=2048)  # 添加Criss-Cross注意力机制
 
         self.avgpool = nn.AdaptiveAvgPool2d((1, 1))
@@ -371,4 +371,4 @@ if __name__ == '__main__':
             'Accuracy': acc_list}
 
     df = pd.DataFrame(data)
-    df.to_excel('accuracy_scores_Fca23-4strode1.xlsx', index=False)
+    df.to_excel('accuracy_scores_Fca1234-4strode1.xlsx', index=False)
