@@ -150,7 +150,8 @@ class Bottleneck(nn.Module):
         self.bn2 = nn.BatchNorm2d(planes)
         self.conv3 = nn.Conv2d(planes, self.expansion * planes, kernel_size=1, bias=False)
         self.bn3 = nn.BatchNorm2d(self.expansion * planes)
-        c2wh = dict([(64, 32), (128, 16), (256, 8), (512, 4)])  # 根据 CIFAR-100 特征图尺寸进行调整
+        # c2wh = dict([(64, 32), (128, 16), (256, 8), (512, 4)])  # 根据 CIFAR-100 特征图尺寸进行调整
+        c2wh = dict([(64, 32), (128, 16), (256, 8), (512, 8)])  # 第4层stride为1时
         self.Fca = Fca  # 保存 Fca 参数状态
         if Fca:
             self.att = MultiSpectralAttentionLayer(planes * 4, c2wh[planes], c2wh[planes], reduction=reduction,
